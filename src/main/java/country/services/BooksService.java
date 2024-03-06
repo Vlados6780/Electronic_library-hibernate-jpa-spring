@@ -43,7 +43,7 @@ public class BooksService {
     }
 
     public List<Book> search(String name) {
-        return booksRepository.findByTitleStartingWith(name);
+        return booksRepository.findBookByTitleContainingIgnoreCase (name);
     }
 
     public Book findOne(int id) {
