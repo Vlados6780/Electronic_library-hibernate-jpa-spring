@@ -14,7 +14,7 @@
 
 <br/>
 
-<div th:if="${books.isEmpty()}">
+<div th:if="${#lists.isEmpty(books)}">
     <h3>No books found</h3>
 </div>
 
