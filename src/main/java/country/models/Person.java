@@ -21,7 +21,7 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int person_id;
     @Min(value=1900, message = "Year of birth should be greater than 1990")
-    @Column(name = "yearOfBirth")
+    @Column(name = "year_of_birth")
     private int yearOfBirth;
     @OneToMany(mappedBy = "owner")
     private List<Book> books;
